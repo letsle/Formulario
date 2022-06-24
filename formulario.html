@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
+        <title>Cadastro</title>
+    </head>
+
+    <body>  
+
+        <div>
+            <h1 id="titulo">Aprender um novo idioma</h1>
+            <p id="subtitulo"><strong>Complete suas informações</strong></p>
+            <br>
+        </div>
+
+        <form>
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label for="nome"><strong>Nome</strong></label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+
+                <div class="campo">
+                    <label for="sobrenome"><strong>Sobrenome</strong></label>
+                    <input type="text" name="sobrenome" id="sobrenome" required>
+                </div>
+            </fieldset> 
+            <div class="campo">
+                <label for="email"><strong>Email</strong></label>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+            <div class="campo">
+                <label><strong>Quais idiomas você fala hoje?</strong></label>
+                <label>
+                    <input type="radio" name="idiomas" value="Apenas lingua nativa" checked>Língua nativa
+                </label>
+                <label>
+                    <input type="radio" name="idiomas" value="Entre um e dois idiomas">Entre um e dois idiomas
+                </label>
+                <label>
+                    <input type="radio" name="idiomas" value="Mais de Três idiomas">Mais de três idiomas
+                </label>
+            </div>
+
+            <div class="campo">
+                <label for="Proficiência"><strong>Qual a sua proficiência nos idiomas falados?</strong></label>
+                <select id="Proficiência" required>
+                  <option selected disabled value="">Selecione</option>
+                  <option>Nivel Básico</option>
+                  <option>Nível Intermediário</option>
+                  <option>Nível Avançado</option>
+                </select>
+            </div>
+
+            <fieldset class="grupo">
+                <div id="check">
+                    <label><strong>Selecione os idiomas que tem interesse em aprender:</strong></label><br><br>
+                    <input type="checkbox" id="idioma1" name="idioma1" value="Inglês">
+                    <label for="idioma1"> Inglês</label>
+                    <input type="checkbox" id="idioma2" name="idioma2" value="Espanhol">
+                    <label for="idioma2"> Espanhol</label>
+                    <input type="checkbox" id="idioma3" name="idioma3" value="Francês">
+                    <label for="idioma3"> Francês</label>
+                    <input type="checkbox" id="idioma4" name="idioma4" value="Italiano">
+                    <label for="idioma4"> Italiano</label>
+                    <input type="checkbox" id="idioma5" name="idioma6" value="Chinês">
+                    <label for="idioma5"> Chinês</label>
+                    <input type="checkbox" id="idioma6" name="idioma6" value="Russo">
+                    <label for="idioma6"> Russo</label>
+                    <input type="checkbox" id="idioma7" name="idioma7" value="Português">
+                    <label for="idioma7"> Português</label>
+                </div>
+            </fieldset>
+            <div class="campo">
+                <br>
+                <label for="experiencia"><strong>Conte um pouco mais sobre seus interesses em aprender um novo idioma: </strong></label>
+                <textarea rows="8" style="width: 40em" id="experiencia" name="experiencia"></textarea>
+            </div>
+            <button class="botao" type="submit" onsubmit="">Enviar</button>            
+        </form>
+    </body>
+</html>
